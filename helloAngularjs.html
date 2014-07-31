@@ -1,17 +1,21 @@
 <!DOCTYPE html>
+<!-- ng-appはこのアプリはangularjsアプリだよ！ということ -->
 <html ng-app="helloAngularjsApp">
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
 </head>
 
+<!--ng-controllerは コントロールを指定 -->
 <body ng-controller="controller">
 <h3>Hello AngularJS </h3>
+<!-- ng-model　は モデルを指定 ,この場合 nameモデルがcontrollerの中に属する-->
 Hello, <input type="text" ng-model='name'/>
 <br/>
-Hello, {{ name }} !
+Hello, {{ name }} !<!-- nameモデル表示 -->
+
 <script>
-    var app = angular.module('helloAngularjsApp', []);
+    var app = angular.module('helloAngularjsApp', []); //moduleでappの名前に同じ
     app.controller('controller', ['$scope',
         function ($scope) {
             $scope.name = "big-angularjs";
