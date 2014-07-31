@@ -1,4 +1,4 @@
 helloAngularJS
 ==============
 hello Angularjs code from 
-http://big-angularjs.blogger.com
+http://big-angularjs.blogspot.jp/
